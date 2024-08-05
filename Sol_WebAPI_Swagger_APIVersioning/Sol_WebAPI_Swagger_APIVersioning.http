@@ -1,0 +1,40 @@
+@Sol_WebAPI_Swagger_APIVersioning_HostAddress = https://localhost:7095
+
+GET {{Sol_WebAPI_Swagger_APIVersioning_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{Sol_WebAPI_Swagger_APIVersioning_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"walk dog",
+  "isComplete":true
+}
+###
+
+GET {{Sol_WebAPI_Swagger_APIVersioning_HostAddress}}/todoitems
+Accept: application/json
+###
+
+GET {{Sol_WebAPI_Swagger_APIVersioning_HostAddress}}/todoitems/1
+
+###
+
+GET {{Sol_WebAPI_Swagger_APIVersioning_HostAddress}}/todoitems/complete
+
+###
+
+PUT {{Sol_WebAPI_Swagger_APIVersioning_HostAddress}}/todoitems/1
+Content-Type: application/json
+
+{
+  "name": "feed fish",
+  "isComplete": false
+}
+###
+
+DELETE {{Sol_WebAPI_Swagger_APIVersioning_HostAddress}}/todoitems/1
+
+###
